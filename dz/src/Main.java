@@ -9,7 +9,12 @@ public class Main {
 
     public static void result(String[] family) {
         List<String> helpList = new ArrayList<>();
+        int stopValue = 0;
         for (int i = 0; i < family.length; i++) {
+            stopValue++;
+            if (stopValue == 2) {
+                break;
+            }
             char[] letters = family[i].toCharArray();
 
             Map<Character, Integer> helpMap = new HashMap<>();
