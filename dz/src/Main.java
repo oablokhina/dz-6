@@ -9,10 +9,10 @@ public class Main {
 
     public static void result(String[] family) {
         List<String> helpList = new ArrayList<>();
-        int stopCount = 0;
+        int stopValue = 0;
         for (int i = 0; i < family.length; i++) {
-            stopCount++;
-            if (stopCount == 2) {
+            stopValue++;
+            if (stopValue == 2) {
                 break;
             }
             char[] letters = family[i].toCharArray();
